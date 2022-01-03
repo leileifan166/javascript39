@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myjs.js"></script>
+</head>
+<body>
+    <script>
+        var str1 = 'hellw.itsource.cn';
+        var str2 = new String('hellw.itsource.cn');
+        document.write(str1[15]);
+        document.write(str2[15]);
+        document.write(str1.charAt(1));
+        document.write(str2.charAt(2));
+        console.log(str1.indexOf('w'));
+        console.log(str2.indexOf('o'));
+        console.log(str1.lastIndexOf('c'));
+        console.log(str2.lastIndexOf('c'));
+        console.log(str1.slice(2,6));
+        console.log(str2.slice(2,7));
+
+
+        console.log(str1);
+        console.log(str2);
+        console.log(str1 == str2);
+        console.log(str1.length);
+        console.log(str2.length);
+        console.log(typeof str1);
+        console.log(typeof str2);
+
+    </script>
+    <a href="javascript:confirm('您确定要报名参加javascript课程吗?');">提出</a>
+    <a href="javascript:alert('確定')">確定</a>
+    <a href="javascript:prompt('あなたの名前を入力してくだい');">提出</a>
+
+    <script>
+        var bool = window.confirm("确定要关闭浏览器窗口吗?");
+        if(bool == true){
+            window.close();
+        }
+
+
+        
+    </script>
+    <script>
+        for(i = 0; i < 3; i++){
+            console.log("外层循环:" + i);
+            for(j = 0; j < 3; j++){
+                console.log("内层循环:" + j)
+            }
+        }
+
+        for (i = 0; i < 5; i++) {
+            if(i == 3){
+                continue;
+            }
+            document.write(i);
+            
+        }
+
+
+        var d = new Date();
+        console.log(d);
+
+        var d2 = new Date("12/03/2016 11:10:30");
+        console.log(d2);
+
+        var d3 = new Date("2021/12/13 12:23:20");
+        console.log(d3);
+
+        var d4 = new Date("2012,11,22 12:11:10");
+        console.log(d4);
+
+        var d5 = new Date(2015,05,20);
+        console.log(d5);
+
+        var d6 = new Date(2017,6,20,13,12,56);
+        console.log(d6);
+
+
+
+    </script>
+
+    
+</body>
+</html>
